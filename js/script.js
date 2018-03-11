@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     var $sec = $("section").hide(),
         current = 0;
 
@@ -28,6 +29,18 @@ $(document).ready(function() {
       $('#fp-nav').css('display','block');
       $('.main-body').css('opacity','1');
       $('.main-body').css('display','block');
+      myVideo.play();
     });
-});
+
+    var myVideo = document.getElementById("video1");
+    
+
+    var isChrome = !!window.chrome; 
+    var isIE = /*@cc_on!@*/false;
+
+    // if( isChrome ) {
+    //   console.log("is chrome");
+    //     $("#video1").replaceWith($('<video id="video1" width="1500" controls><source src="imgs/appliedmedia16.webm" type="video/webm"></video>'));
+    // }
+  });
 

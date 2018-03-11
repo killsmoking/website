@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 
 	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 
@@ -28,7 +28,6 @@
         menu: '#menu',
         navigation: true,
         verticalCentered: true,
-        dragAndMove: true,
         sectionsColor: ['#0c0c0c', '#161616', '#DDCCC3', '#d3d3d3','#d3d3d3'],
         
 
@@ -125,7 +124,12 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
       </div>
       <div id="fullpage">
       	<div class="section" id="section-0" data-anchor="page1">
-          <h1 class="flex flex--space-around align-center">Vidya</h1>
+          <!-- <h1 class="flex flex--space-around align-center">Vidya</h1> -->
+          <video id="video1" onclick="this.paused ? this.play() : this.pause();">
+            <!-- <source src="imgs/appliedmedia16.webm" type="video/webm"> -->
+            <source src="imgs/appliedmedia16.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
       	</div>
 
       	<div class="section" id="section-1" data-anchor="page2">

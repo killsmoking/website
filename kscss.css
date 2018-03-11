@@ -437,7 +437,8 @@ section {
     cursor: pointer;
     color: white;
     letter-spacing: 3px;
-    text-transform: uppercase; }
+    text-transform: uppercase; 
+    transition: all .4s;}
     .part5 h1:hover {
       color: transparent;
       text-shadow: 0 0 90px white; }
@@ -703,7 +704,8 @@ video::-webkit-media-controls {
   right: 15px;
   cursor: pointer;
   padding: 5px 16px;
-  border: 1px #808080 solid; }
+  border: 1px #808080 solid; 
+  font-size: 16px!important;}
 
 .skip:hover {
   color: #d3d3d3;
@@ -779,4 +781,9 @@ video::-webkit-media-controls {
 }
 .closebtn{
   font-size: 40px!important;
+}
+#video1{
+  width: 100%;
+  max-width: 2000px;
+  height: auto;
 }
