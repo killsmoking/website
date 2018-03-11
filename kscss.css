@@ -773,5 +773,10 @@ video::-webkit-media-controls {
   transition-delay: 1s;
 }
 *{
-  font-family: Mina, sans-serif;
+  font-family: Mina, sans-serif!important;
+  text-transform: uppercase!important;
+  font-size: 20px!important;
+}
+.closebtn{
+  font-size: 40px!important;
 }
