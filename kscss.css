@@ -772,3 +772,6 @@ video::-webkit-media-controls {
   transition: all 1s;
   transition-delay: 1s;
 }
+*{
+  font-family: Mina, sans-serif;
+}
