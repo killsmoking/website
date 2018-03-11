@@ -21,15 +21,30 @@
 	<script type="text/javascript" src="js/examples.js"></script>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'fifthpage'],
         menu: '#menu',
         navigation: true,
-				verticalCentered: true,
-				sectionsColor: ['#000', '#000', '#d3d3d3', '#d3d3d3','#d3d3d3']
-			});
-		});
-	</script>
+        verticalCentered: true,
+        sectionsColor: ['#0c0c0c', '#161616', '#DDCCC3', '#d3d3d3','#d3d3d3'],
+        
+
+        onLeave: function(index, nextIndex, direction){
+          //it won't scroll if the destination is the 3rd section
+          if(nextIndex == 3){
+            $("#Nicotine").css("transform", "none");
+            $("#Cadmium").css("transform", "none");
+            $("#Stearic_Acid").css("transform", "none");
+            $("#Methanol").css("transform", "none");
+            $("#Butane").css("transform", "none");
+            $("#Ammonia").css("transform", "none");
+            $(".st35").css("opacity", "1");
+          }
+        }
+      });
+    });
+  </script>
 
 <div class="enter-site" id="window">
   <section class="part1 flex flex--space-around align-center columns">
@@ -85,14 +100,13 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
       <div class="lgb">
           <img class="logo" src="imgs/logov2.png" alt="logo">
       </div>
-      <div id="mySidenav" class="sidenav">
+      <div id="menu" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#page1">Video</a>
-        <a href="#page2">Our Aim</a>
-        <a href="#s1slide2">Our Research</a>
-        <a href="#page3">Infographic</a>
-        <a href="#page4">Our Resources</a>
-        <a href="#page5">Contact</a>
+        <a data-menuanchor="firstPage" href="#firstPage" class="active">Video</a>
+        <a data-menuanchor="secondPage" href="#secondPage">Our Aim</a>
+        <a data-menuanchor="thirdPage" href="#thirdPage">Infographic</a>
+        <a data-menuanchor="fourthpage" href="#fourthpage">Our Research</a>
+        <a data-menuanchor="fifthpage" href="#fifthpage">Contact</a>
       </div>
       <div class="nav flex flex--space-between align-center">
         <div class="lg flex flex--start align-start">
@@ -182,7 +196,7 @@ According to the NHS smoking causes cancer in the following areas:
         </div>
         <div class="slide" id="s3slide2">
           <h1 class="flex flex--space-around align-center">Our Resources</h1>
-          <p class="flex flex--space-around align-center">Animation11</p>
+          <p class="flex flex--space-around align-center">Animation</p>
           <br>
           <div class="vid flex flex--space-around align-center">
             <div class="place">
@@ -200,15 +214,14 @@ According to the NHS smoking causes cancer in the following areas:
   </div>
   <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("menu").style.width = "250px";
     document.getElementById("main-body").style.marginRight = "250px";
-
+    document.getElementById("fp-nav").style.marginRight = "250px";
 }
-
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("menu").style.width = "0";
     document.getElementById("main-body").style.marginRight= "0";
-
+    document.getElementById("fp-nav").style.marginRight = "0";
 }
 </script>
 </body>
