@@ -30,4 +30,3 @@ $(document).ready(function() {
       $('.main-body').css('display','block');
     });
 });
-
