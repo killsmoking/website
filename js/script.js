@@ -42,5 +42,15 @@ $(document).ready(function() {
     //   console.log("is chrome");
     //     $("#video1").replaceWith($('<video id="video1" width="1500" controls><source src="imgs/appliedmedia16.webm" type="video/webm"></video>'));
     // }
+    
   });
+
+window.onbeforeunload = function () {
+
+    //for changing the url
+
+    var newUrl = "https://killsmoking.github.io/website/";
+    window.location.href = newUrl;
+}; 
+
 
