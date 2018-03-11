@@ -787,3 +787,8 @@ video::-webkit-media-controls {
   max-width: 2000px;
   height: auto;
 }
+.svgcont{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
