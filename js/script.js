@@ -45,12 +45,55 @@ $(document).ready(function() {
     
   });
 
-window.onbeforeunload = function () {
-
-    //for changing the url
-
-    var newUrl = "https://killsmoking.github.io/website/";
-    window.location.href = newUrl;
-}; 
+function counting(){
+  var easingFn = function (t, b, c, d) {
+  var ts = (t /= d) * t;
+  var tc = ts * t;
+  return b + c * (tc + -3 * ts + 3 * t);
+  }
+  var options = {
+    useEasing: true, 
+    easingFn: easingFn, 
+    useGrouping: true, 
+    separator: ',', 
+    decimal: '.', 
+  };
+  var demo = new CountUp('countup19', 0, 19.3, 1, 2.5, options);
+  if (!demo.error) {
+    demo.start();
+  } else {
+    console.error(demo.error);
+  }
+  var demo = new CountUp('countup15', 0, 15.3, 1, 2.5, options);
+  if (!demo.error) {
+    demo.start();
+  } else {
+    console.error(demo.error);
+  }
+  var demo = new CountUp('countup120', 0, 120000, 0, 2.5, options);
+  if (!demo.error) {
+    demo.start();
+  } else {
+    console.error(demo.error);
+  }
+} 
+// var easingFn = function (t, b, c, d) {
+// var ts = (t /= d) * t;
+// var tc = ts * t;
+// return b + c * (tc + -3 * ts + 3 * t);
+// }
+// var options = {
+//   useEasing: true, 
+//   easingFn: easingFn, 
+//   useGrouping: true, 
+//   separator: ',', 
+//   decimal: '.', 
+// };
+// var demo = new CountUp('#countup', 0, 19.3, 1, 2.5, options);
+// if (!demo.error) {
+//   demo.start();
+// } else {
+//   console.error(demo.error);
+// }
 
 
