@@ -383,50 +383,54 @@ section {
   text-transform: uppercase; }
 
 .part1 {
-  background: darkgreen;
+  background: #132813;
   height: 100vh; }
   .part1 .bloodline {
     width: 390.166667px;
     height: 154.5px; }
   .part1 h1 {
-    font-size: 30px;
-    color: transparent;
-    letter-spacing: 3px;
-    text-shadow: 0 0 6px white; }
+    font-size: 60px;
+    color: white;
+    letter-spacing: 3px;}
 
 .part2 {
-  background: darkblue;
+  background: #082b3a;
   height: 100vh; }
   .part2 h1 {
-    font-size: 30px;
+    font-size: 60px;
     color: white;
-    letter-spacing: 3px;
-    text-shadow: 0 0 6px white; }
+    letter-spacing: 3px; }
   .part2 .cigarette {
     width: 274.250001px;
     height: 108.25px;
     margin-right: 190px; }
 
 .part3 {
-  background: darkred;
+  background: #49150a;
   height: 100vh; }
   .part3 h1 {
-    font-size: 30px;
+    font-size: 60px;
     cursor: pointer;
     color: white;
     letter-spacing: 3px;
-    text-shadow: 0 0 6px white; }
+  }
+    .part3 .lung {
+      width: 228.714286px;
+      height: 220.857143px;
+      margin-right: 190px; }
 
 .part4 {
-  background: black;
+  background: #1b1d21;
   height: 100vh; }
   .part4 h1 {
     font-size: 30px;
     cursor: pointer;
     color: white;
-    letter-spacing: 3px;
-    text-shadow: 0 0 6px white; }
-
+    letter-spacing: 3px;}
+    .part4 .babies {
+          width: 270.444444px;
+          height: 140.111111px;
+          margin-right: 190px; }
 .part5 {
   background: #31302f;
   height: 100vh; }
@@ -437,7 +441,7 @@ section {
     cursor: pointer;
     color: white;
     letter-spacing: 3px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     transition: all .4s;}
     .part5 h1:hover {
       color: transparent;
@@ -704,7 +708,7 @@ video::-webkit-media-controls {
   right: 15px;
   cursor: pointer;
   padding: 5px 16px;
-  border: 1px #808080 solid; 
+  border: 1px #808080 solid;
   font-size: 16px!important;}
 
 .skip:hover {
