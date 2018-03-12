@@ -33,7 +33,8 @@ $(document).ready(function() {
     });
 
     var myVideo = document.getElementById("video1");
-    
+
+    window.onbeforeunload = location.replace("index.html#firstPage");
 
     var isChrome = !!window.chrome; 
     var isIE = /*@cc_on!@*/false;
