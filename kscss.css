@@ -830,3 +830,20 @@ video::-webkit-media-controls {
   transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
   transition-delay: 1s;
 }
+#abt{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /*background-image: url(imgs/about.png);*/
+}
+#btt{
+  width: 100%;
+  text-align: center;
+}
+#btt svg{
+  z-index: 99999999999;
+  position: absolute;
+  bottom: 42%;
+  color: grey;
+  font-size: 25px!important;
+}
