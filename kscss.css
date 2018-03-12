@@ -798,3 +798,22 @@ video::-webkit-media-controls {
   text-align: center;
   margin: 0 auto;
 }
+#whiteblock2{
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: 1s;
+  transform: translateY(13%);
+}
+#whteblock1{
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: 1s;
+  transform: translateY(13%);
+}
+.s2st4{
+  font-size: 172.04px!important;
+}
+#c19, #c15{
+  fill: green;
+}
+#c120{
+  fill: red;
+}
