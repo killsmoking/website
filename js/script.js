@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     var $sec = $("section").hide(),
         current = 0;
 
@@ -33,6 +32,7 @@ $(document).ready(function() {
     });
 
     var myVideo = document.getElementById("video1");
+    var myVideo2 = document.getElementById("video2");
 
     window.onbeforeunload = location.replace("index.html#firstPage");
 
@@ -43,8 +43,70 @@ $(document).ready(function() {
     //   console.log("is chrome");
     //     $("#video1").replaceWith($('<video id="video1" width="1500" controls><source src="imgs/appliedmedia16.webm" type="video/webm"></video>'));
     // }
+    var vcount = 0;
     
-  });
+    $('#fullpage').fullpage({
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'fifthpage', 'sixthpage', 'seventhpage'],
+        menu: '#menu',
+        navigation: true,
+        verticalCentered: true,
+        sectionsColor: ['#000000', '#161414', '#1e1f21', '#181919','#111112','#000000','grey'],
+
+
+        onLeave: function(index, nextIndex, direction){
+          if(nextIndex != 2){
+            $("#Layer_3, #Layer_2").css("transition", "0s");
+            $("#Nicotine").css("transform", "translate(-70%, 31.2%)");
+            $("#Cadmium").css("transform", "translate(-54%, 24.5%)");
+            $("#Stearic_Acid").css("transform", "translate(-44%, 20.3%)");
+            $("#Methanol").css("transform", "translate(-35%, 16%)");
+            $("#Butane").css("transform", "translate(-25%, 12%)");
+            $("#Ammonia").css("transform", "translate(-13%, 5.4%)");
+            $("#Layer_3").css("opacity", "0");
+            $("#Layer_2").css({"opacity": "0", "transform": "translateX(-3%)"});
+          }
+          if(nextIndex != 3){
+            $("#whteblock1, #whiteblock2").css({"transition": ".5s", "transform": "translateY(13%)"});
+          }
+          if(nextIndex != 4){
+            $("#barchartpercent").css({"transition": "0s", "opacity": "0"});
+            $(".s3st11, .s3st14").css("transform", "translateX(-27%)");
+          }
+          if(nextIndex == 2){
+            $("#Nicotine, #Cadmium, #Stearic_Acid, #Methanol, #Butane, #Ammonia").css("transform", "none");
+            $("#Layer_3").css("opacity", "1");
+            $("#Layer_2").css({"opacity": "1", "transform": "none"});
+          } else if(nextIndex == 3){
+            // if(ccount < 1){
+              counting();
+              counting120();
+            // }
+            $("#whteblock1").css("transform", "translateY(2%)");
+            $("#whiteblock2").css("transform", "none");
+          } else if(nextIndex == 4){
+            console.log("at chart");
+            $(".s3st11").css("transform", "none");
+            $(".s3st14").css("transform", "none");
+            $("#barchartpercent").css("opacity", "1");
+          } else if(nextIndex == 5){
+            if(vcount < 1){
+              myVideo2.play();
+              vcount = 1;
+            }
+          }
+        },
+
+        afterLoad: function(anchorLink, index){
+          var loadedSection = $(this);
+          //reset s2 and s4
+            $("#Layer_3, #Layer_2, #whteblock1, #whiteblock2, #barchartpercent").css("transition", "all 1s cubic-bezier(0.22, 0.61, 0.36, 1)");
+            $("#Layer_3").css("transition-delay", ".9s");
+            $("#Layer_2, #whteblock1, #whiteblock2, #barchartpercent").css("transition-delay", "1s");
+        }
+
+      });
+
+});
 
 function counting(){
   var easingFn = function (t, b, c, d) {

@@ -27,77 +27,16 @@
   <script type="text/javascript" src="js/countup.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 
-	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/examples.js"></script>
-
-	<script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'fifthpage', 'sixthpage', 'seventhpage'],
-        menu: '#menu',
-        navigation: true,
-        verticalCentered: true,
-        sectionsColor: ['#0c0c0c', '#161414', '#1e1f21', '#181919','#111112','#000000','grey'],
-
-
-        onLeave: function(index, nextIndex, direction){
-          if(nextIndex != 2){
-            $("#Layer_3, #Layer_2").css("transition", "0s");
-            $("#Nicotine").css("transform", "translate(-70%, 31.2%)");
-            $("#Cadmium").css("transform", "translate(-54%, 24.5%)");
-            $("#Stearic_Acid").css("transform", "translate(-44%, 20.3%)");
-            $("#Methanol").css("transform", "translate(-35%, 16%)");
-            $("#Butane").css("transform", "translate(-25%, 12%)");
-            $("#Ammonia").css("transform", "translate(-13%, 5.4%)");
-            $("#Layer_3").css("opacity", "0");
-            $("#Layer_2").css({"opacity": "0", "transform": "translateX(-3%)"});
-          }
-          if(nextIndex != 3){
-            $("#whteblock1, #whiteblock2").css({"transition": ".5s", "transform": "translateY(13%)"});
-          }
-          if(nextIndex != 4){
-            $("#barchartpercent").css({"transition": "0s", "opacity": "0"});
-            $(".s3st11, .s3st14").css("transform", "translateX(-27%)");
-          }
-          if(nextIndex == 2){
-            $("#Nicotine, #Cadmium, #Stearic_Acid, #Methanol, #Butane, #Ammonia").css("transform", "none");
-            $("#Layer_3").css("opacity", "1");
-            $("#Layer_2").css({"opacity": "1", "transform": "none"});
-          } else if(nextIndex == 3){
-            // if(ccount < 1){
-              counting();
-              counting120();
-            // }
-            $("#whteblock1").css("transform", "translateY(2%)");
-            $("#whiteblock2").css("transform", "none");
-          } else if(nextIndex == 4){
-            console.log("at chart");
-            $(".s3st11").css("transform", "none");
-            $(".s3st14").css("transform", "none");
-            $("#barchartpercent").css("opacity", "1");
-          }
-        },
-
-        afterLoad: function(anchorLink, index){
-          var loadedSection = $(this);
-          //reset s2 and s4
-            $("#Layer_3, #Layer_2, #whteblock1, #whiteblock2, #barchartpercent").css("transition", "all 1s cubic-bezier(0.22, 0.61, 0.36, 1)");
-            $("#Layer_3").css("transition-delay", ".9s");
-            $("#Layer_2, #whteblock1, #whiteblock2, #barchartpercent").css("transition-delay", "1s");
-        }
-
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/examples.js"></script>
 
 <div class="enter-site" id="window">
   <section class="part1 flex flex--space-around align-center columns">
   <div class="back_box">
     <div class="midofp1">
 <img class="bloodline" src="imgs/bline.png" alt="img">
-
     <h1 class="fact" style="color:white;">Did you know that there were,<br> estimated to be around <span class="bignum">79</span><br> thousand deaths attributable <br>to smoking.
     <br><span class="bignum">16%</span> of deaths in the UK.
     <br>
@@ -149,7 +88,7 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
 
     <div id="main-body" class="main-body">
       <div class="lgb">
-          <a href="#fifthpage"><img class="logo" src="imgs/logov2.png" alt="logo"></a>
+          <a href="#seventhpage"><img class="logo" src="imgs/logov2.png" alt="logo"></a>
       </div>
       <div id="menu" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -157,8 +96,8 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
         <a data-menuanchor="secondPage" href="#secondPage">In Your System</a>
         <a data-menuanchor="thirdPage" href="#thirdPage">UK Facts</a>
         <a data-menuanchor="fourthpage" href="#fourthpage">You Are The Target</a>
-        <a data-menuanchor="fifthpage" href="#fifthpage">Our Resources</a>
-        <a data-menuanchor="sixthpage" href="#sixthpage">Animation</a>
+        <a data-menuanchor="fifthpage" href="#fifthpage">Save Your Money</a>
+        <a data-menuanchor="sixthpage" href="#sixthpage">Artefacts</a>
         <a data-menuanchor="seventhpage" href="#seventhpage">About</a>
       </div>
       <div class="nav flex flex--space-between align-center">
@@ -175,17 +114,17 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
         </div>
       </div>
       <div id="fullpage">
-      	<div class="section" id="section-0" data-anchor="page1">
+        <div class="section" id="section-0" data-anchor="page1">
           <!-- <h1 class="flex flex--space-around align-center">Vidya</h1> -->
           <video id="video1" onclick="this.paused ? this.play() : this.pause();">
-            <!-- <source src="imgs/appliedmedia16.webm" type="video/webm"> -->
-            <source src="imgs/appliedmedia22.mp4" type="video/mp4">
+            <!-- <source src="imgs/appliedmedia30.webm" type="video/webm"> -->
+            <source src="imgs/appliedmedia30.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
-      	</div>
+        </div>
 
-      	<div class="section" id="section-1" data-anchor="page2">
-      	    <!-- <h1 class="flex flex--space-around align-center">In Your System</h1> -->
+        <div class="section" id="section-1" data-anchor="page2">
+            <!-- <h1 class="flex flex--space-around align-center">In Your System</h1> -->
 
 <div class="svgcont">
 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
@@ -838,9 +777,9 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
   </div>
 
-      	</div>
+        </div>
 
-      	<div class="section" id="section-2" data-anchor="page3">
+        <div class="section" id="section-2" data-anchor="page3">
 
           <!-- <div id="countup19" style="text-align: center;">0</div>
           <div id="countup15" style="text-align: center;">0</div>
@@ -2193,51 +2132,50 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 </div>
       </div>
-      <div class="section" id="section-4" data-anchor="page5">
-        <div class="slide" id="s3slide1">
 
-
-      <div class="p1 flex flex--space-around align-center rows">
-        <div>
-          <img class="sc" src="imgs/smokecoffin.jpg" alt="img"></img>
-        </div>
-        <div>
-          <img class="sah" src="imgs/smokeashhand.jpg" alt="img"></img>
-        </div>
-      </div>
-      <h1 class="titlee flex flex--end align-end">Our Resources</h1>
-    </div>
-    <div class="slide" id="s3slide2">
-      <div class="p2 flex flex--space-around align-center rows">
-        <div>
-          <img class="hs" src="imgs/handsmokingpic2.jpg" alt="img"></img>
-        </div>
-        <div>
-          <img class="gs" src="imgs/grimsmoker.jpg" alt="img"></img>
-        </div>
-      </div>
-      <h1 class="titlee flex flex--end align-end">Our Resources</h1>
-      </div>
+<div class="section" id="section-4" data-anchor="page5">
+    <!-- <h1 style="font-size:40px!important; text-transform:none!important;"class="flex flex--space-around align-center">Animation</h1> -->
+  <!-- <p class="flex flex--space-around align-center">Click to play</p> -->
+  <div class="a flex flex--space-around align-center">
+  <video class="flex flex--space-around align-center" id="video2" onclick="this.paused ? this.play() : this.pause();">
+    <source src="imgs/EE2616_FS_FinalAnimation_V3.0.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  </div>
 </div>
 
 <div class="section" id="section-5" data-anchor="page6">
-<h1 style="font-size:40px!important; text-transform:none!important;"class="flex flex--space-around align-center">Animation</h1>
-<p class="flex flex--space-around align-center">Click to play</p>
-<div class="a flex flex--space-around align-center">
-<video class="flex flex--space-around align-center" id="video2" onclick="this.paused ? this.play() : this.pause();">
-  <source src="imgs/EE2616_FS_FinalAnimation_V3.0.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <div class="slide" id="s3slide1">
+          <div class="p1 flex flex--space-around align-center rows">
+            <div>
+              <img class="sc" src="imgs/smokecoffin.jpg" alt="img"></img>
+            </div>
+            <div>
+              <img class="sah" src="imgs/smokeashhand.jpg" alt="img"></img>
+            </div>
+          </div>
+        <!-- <h1 class="titlee flex flex--end align-end">Our Resources</h1> -->
+    </div>
+    <div class="slide" id="s3slide2">
+          <div class="p2 flex flex--space-around align-center rows">
+            <div>
+              <img class="hs" src="imgs/handsmokingpic2.jpg" alt="img"></img>
+            </div>
+            <div>
+              <img class="gs" src="imgs/grimsmoker.jpg" alt="img"></img>
+            </div>
+          </div>
+        <!-- <h1 class="titlee flex flex--end align-end">Our Resources</h1> -->
+    </div>
 </div>
 
-</div>
-      <div class="section" id="section-6" data-anchor="page7">
+<div class="section" id="section-6" data-anchor="page7">
         <!-- <h1 class="flex flex--space-around align-center">About</h1> -->
         <!-- <div id="btt" style="text-align: center;"><a href="#secondpage"><i class="fas fa-arrow-alt-circle-up"></i></a></div> -->
         <img id="abt" src="imgs/about.png">
         <!-- <div id="abt"></div> -->
 
-      </div>
+</div>
 
     <footer>
     </footer>
