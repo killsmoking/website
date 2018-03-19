@@ -35,11 +35,11 @@
 	<script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'fifthpage'],
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'fifthpage', 'sixthpage', 'seventhpage'],
         menu: '#menu',
         navigation: true,
         verticalCentered: true,
-        sectionsColor: ['#0c0c0c', '#161414', '#1e1f21', '#181919','#111112'],
+        sectionsColor: ['#0c0c0c', '#161414', '#1e1f21', '#181919','#111112','#000000','grey'],
 
 
         onLeave: function(index, nextIndex, direction){
@@ -156,7 +156,9 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
         <a data-menuanchor="secondPage" href="#secondPage">In Your System</a>
         <a data-menuanchor="thirdPage" href="#thirdPage">UK Facts</a>
         <a data-menuanchor="fourthpage" href="#fourthpage">You Are The Target</a>
-        <a data-menuanchor="fifthpage" href="#fifthpage">About</a>
+        <a data-menuanchor="fifthpage" href="#fifthpage">Our Resources</a>
+        <a data-menuanchor="sixthpage" href="#sixthpage">Animation</a>
+        <a data-menuanchor="seventhpage" href="#seventhpage">About</a>
       </div>
       <div class="nav flex flex--space-between align-center">
         <div class="lg flex flex--start align-start">
@@ -2190,8 +2192,45 @@ smokers at the time of<br> delivery, down from <span class="bignum">15%</span> i
 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 </div>
       </div>
-
       <div class="section" id="section-4" data-anchor="page5">
+        <div class="slide" id="s3slide1">
+
+
+      <div class="p1 flex flex--space-around align-center rows">
+        <div>
+          <img class="sc" src="imgs/smokecoffin.jpg" alt="img"></img>
+        </div>
+        <div>
+          <img class="sah" src="imgs/smokeashhand.jpg" alt="img"></img>
+        </div>
+      </div>
+      <h1 class="titlee flex flex--end align-end">Our Resources</h1>
+    </div>
+    <div class="slide" id="s3slide2">
+      <div class="p2 flex flex--space-around align-center rows">
+        <div>
+          <img class="hs" src="imgs/handsmokingpic2.jpg" alt="img"></img>
+        </div>
+        <div>
+          <img class="gs" src="imgs/grimsmoker.jpg" alt="img"></img>
+        </div>
+      </div>
+      <h1 class="titlee flex flex--end align-end">Our Resources</h1>
+      </div>
+</div>
+
+<div class="section" id="section-5" data-anchor="page6">
+<h1 style="font-size:40px!important; text-transform:none!important;"class="flex flex--space-around align-center">Amimation</h1>
+<p class="flex flex--space-around align-center">Click to play</p>
+<div class="a flex flex--space-around align-center">
+<video class="flex flex--space-around align-center" id="video2" onclick="this.paused ? this.play() : this.pause();">
+  <source src="imgs/EE2616_FS_FinalAnimation_V3.0.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+</div>
+      <div class="section" id="section-6" data-anchor="page7">
         <!-- <h1 class="flex flex--space-around align-center">About</h1> -->
         <!-- <div id="btt" style="text-align: center;"><a href="#secondpage"><i class="fas fa-arrow-alt-circle-up"></i></a></div> -->
         <img id="abt" src="imgs/about.png">
