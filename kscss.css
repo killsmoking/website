@@ -382,11 +382,16 @@ section {
 .fact {
   text-transform: uppercase; }
 
+.back_box{
+  max-width: 100%;
+}
+
 .part1 {
   background: #132813;
   height: 100vh; }
   .part1 .bloodline {
     width: 390.166667px;
+    max-width: 100%;
     margin-top: -200px;
     margin-bottom: -200px; }
   .part1 h1 {
@@ -403,7 +408,9 @@ section {
     letter-spacing: 3px; }
   .part2 .cigarette {
     width: 274.250001px;
-    height: 108.25px;
+    max-width: 100%;
+    /*height: 108.25px;*/
+    height: auto;
     margin-right: 190px; }
 
 .part3 {
@@ -417,7 +424,9 @@ section {
   }
     .part3 .lung {
       width: 228.714286px;
-      height: 220.857143px;
+      max-width: 100%;
+      /*height: 220.857143px;*/
+      height: auto;
       margin-right: 190px; }
 
 .part4 {
@@ -430,7 +439,9 @@ section {
     letter-spacing: 3px;}
     .part4 .babies {
           width: 270.444444px;
-          height: 140.111111px;
+          max-width: 100%;
+          /*height: 140.111111px;*/
+          height: auto;
           margin-right: 190px; }
 .part5 {
   background: #31302f;
