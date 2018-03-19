@@ -387,7 +387,8 @@ section {
   height: 100vh; }
   .part1 .bloodline {
     width: 390.166667px;
-    height: 154.5px; }
+    margin-top: -200px;
+    margin-bottom: -200px; }
   .part1 h1 {
     font-size: 60px;
     color: white;
