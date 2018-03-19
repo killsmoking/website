@@ -50,7 +50,7 @@ $(document).ready(function() {
         menu: '#menu',
         navigation: true,
         verticalCentered: true,
-        sectionsColor: ['#000000', '#161414', '#1e1f21', '#181919','#111112','#000000','grey'],
+        sectionsColor: ['#000000', '#161414', '#1e1f21', '#181919','#111112','#000000','#111112'],
 
 
         onLeave: function(index, nextIndex, direction){
